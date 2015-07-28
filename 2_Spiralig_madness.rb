@@ -1,4 +1,4 @@
-
+#394927th place!!! I think I get a rust medal.
 def fibonacci(array)
 	upto = 4_000_000
 	i = 2
