@@ -1,0 +1,1 @@
+require_relative 'glad_colors'
