@@ -1,4 +1,4 @@
-
+require_relative 'glad_colors'
 #286895th place!
 
 def prime?(arg)
@@ -20,15 +20,6 @@ def optimus_prime(num)
 		d += 1
 	end
 	return primes.last
-end
-
-def glad_colors(string, color_code)
-  "\e[#{color_code}m#{string}\e[0m"
-end
-
-# Changes string to Blue
-def pink(string)
-  glad_colors(string, 35)
 end
 
 puts "Took you long enough. Here: " + pink("#{optimus_prime(600_851_475_143)}\n") + "\

@@ -1,3 +1,5 @@
+require_relative 'glad_colors'
+
 #394927th place!!! I think I get a rust medal.
 def fibonacci(array)
 	upto = 4_000_000
@@ -22,14 +24,6 @@ def even_sum(array)
 	return sum_arr.inject(:+)
 end
 
-def glad_colors(string, color_code)
-  "\e[#{color_code}m#{string}\e[0m"
-end
-
-# Changes string to Blue
-def pink(string)
-  glad_colors(string, 35)
-end
 
 puts "Did you truly need to call me for this puny querry?"\
  + pink("*sigh*\n") + "The answer is: " + pink(even_sum(fibo)) + \
