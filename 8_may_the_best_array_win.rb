@@ -31,8 +31,9 @@ lord_of_the_arrays = {}
 rings.each_index do |i|
 	count = 987
 	while count > 0
-		array = [rings[i].to_i, rings[i+1].to_i, rings[i+2].to_i, rings[i+3].to_i, rings[i+4].to_i, rings[i+5].to_i, \
-		rings[i+6].to_i, rings[i+7].to_i, rings[i+8].to_i, rings[i+9].to_i, rings[i+10].to_i, rings[i+11].to_i, rings[i+12].to_i]
+		array = [rings[i].to_i, rings[i+1].to_i, rings[i+2].to_i, rings[i+3].to_i, \
+		rings[i+4].to_i, rings[i+5].to_i, rings[i+6].to_i, rings[i+7].to_i, \
+		rings[i+8].to_i, rings[i+9].to_i, rings[i+10].to_i, rings[i+11].to_i, rings[i+12].to_i]
 		array = array.inject(:*)
 		lord_of_the_arrays[i.to_s.to_sym] = array
 		count -= 1
@@ -44,7 +45,7 @@ def largest_hash_key(hash)
 end
 
 largest = largest_hash_key(lord_of_the_arrays)
-print "Here is your answer: " + pink(largest) + " now stop prodding me with your " + pink("hand tentacles.")
+puts "Here is your answer: " + pink(largest) + " now stop prodding me with your " + pink("hand tentacles.")
 
 
 
