@@ -105,7 +105,6 @@ string = "37107287533902102798797998220837590246510135740250
 
 meganums = string.split("\n")
 meganums.map! {|x| x.to_i}
-megasum = 
 megasum = meganums.inject(:+).to_s
 
 
