@@ -9,9 +9,6 @@ tens = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eight
 digits = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 teenagers_thousand = (("teneleventwelvethirteenfourteenfifteensixteenseventeeneighteennineteen").length * 5) + 10
 
-
-d_length = 
-
 alpha_num = 0
 alpha_array = 0
 
@@ -19,8 +16,6 @@ def combinator(a, b, c)
   alpha_array = a.product(b, c)
   return alpha_array.flatten.join("").length - a.flatten.join("").length
 end
-
-	
 
 puts "Your answer: " + pink(teenagers_thousand + combinator(digits, tens, hundreds)) + " aren't we a clever " + pink("primate.")
 
