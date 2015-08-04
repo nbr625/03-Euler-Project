@@ -1,3 +1,6 @@
+#By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, 
+#we can see that the 6th prime is 13.
+#What is the 10 001st prime number?
 require_relative 'glad_colors'
 # 234325th place!! Not the fastest... Not fast at all really, needs work
 # But its mine. Doesn't matter that I almost gave the cpu an enurism.
